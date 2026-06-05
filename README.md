@@ -2,3 +2,7 @@
 DDoS generated Datasets
 This Dataset was produced on a single machine equipped with an Intel i7 11th generation 2.30 GHz processor, 64 GB RAM, and a 2 TB hard disk. Within a VMware environment, four virtual machines were set up, comprising one Linux machine (LVPC), two Windows machines (WVPC-1 and WVPC-2), and one Windows server (WVS). These virtual machines were interconnected through VMware network adapters on single NIC card of the host machine with IP version 6 addresses.
 To generate a traffic in the instance of an attack, an ICMPv6 DDoS attack was launched using a Scapy script. The attack is launched from two virtual machines (LVPC and WVPC-1), targeting the Windows server (WVS). The ensuing network traffic, encompassing both normal activity and the ICMPv6 attack, was captured on the Windows server (WVS) using Wireshark, resulting in a dataset size of 18.3 MB (60,000 bytes/sec). Subsequently, the captured traffic underwent transformation into an Excel sheet as scdtsets.csv of size 58.2 MB. The proposed Model was employed on these data sets.
+
+DISCLAIMER
+
+This Dataset is provided solely for educational and research purposes. The author assumes no responsibility or liability for any misuse, damages, losses, or consequences arising from its use. Users are strongly advised to use this code responsibly, ethically, and in compliance with all applicable laws and regulations.
